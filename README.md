@@ -7,7 +7,8 @@ The idea behind the Fourier transform of an image is to break down the image int
 The magnitude plot of the Fourier Transform represents the amplitude or strength of various spatial frequency components in the image. It is also known as the amplitude spectrum. In the context of image analysis, the magnitude plot helps us understand which spatial frequencies are prevalent in the image and to what extent. High values in the magnitude plot indicate the presence of prominent features or patterns at the corresponding spatial frequencies.
 
 ![image1](images/mag_freq.png)
-
+*The magnitude plot represents the strength of frequency component, phase plot
+represent the relative change in frequency*
 
 ```python
 ########## Section 4.1 MAGNITUDE-PHASE PLOTS ###################
@@ -25,7 +26,7 @@ The phase plot of the Fourier Transform represents the phase information associa
 
 # Low-Pass, High-Pass, and Band-Pass Filters
 
-![Lincoln in Dalivision](img/Lincon.jpg)
+![Lincoln in Dalivision](images/Lincon.jpg)
 
 *Artwork Information: 'Lincoln in Dalivision' (1977)*
 
@@ -48,4 +49,16 @@ def butterworth_low_pass(rows, cols, center_row, center_col, cutoff, n=1):
     filter = 1 / (1 + (distance / cutoff) ** (2 * n))
     return filter
 ```
+
+### High-pass filter
+
+A high-pass filter allows high-frequency components to pass through while attenuating or removing low-frequency components. In image processing, high-frequency components represent fine details, sharp edges, and textures. High-pass filtering can be employed for tasks like edge detection and enhancing fine details in an image.
+
+### Band-pass filter
+
+A band-pass filter allows a specific range of frequencies to pass through while attenuating both low and high frequencies. In image processing, band-pass filtering can be useful for isolating features within a particular frequency range. It retains only the mid-frequency details. Bandpass filters are often used in tasks like texture analysis, image segmentation, and feature extraction.
+
+![image3](images/lincon_output.png)
+
+*we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.*
 
