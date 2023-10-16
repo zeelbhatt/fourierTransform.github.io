@@ -70,3 +70,62 @@ A band-pass filter allows a specific range of frequencies to pass through while 
   we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.
 </p>
 
+## Phase swapping
+
+Phase is often more informative and perceptually significant than the magnitude. The phase of an image is more critical than its magnitude for perception and feature identification is known as the Phase Congruency Theory. 
+<p align="center">
+  <img src="images/phase_swap.png" width="450" alt="Phae swaping">
+  <br>
+  Phase of the image is more responsible for the textures and main fetures of the images
+</p>
+
+```python
+########## Section 4.3 PHASE SWAP ###################
+
+# Swap the phases while keeping the magnitudes the same
+zebra_chitta_dft = np.zeros_like(zebra_dft)
+zebra_chitta_dft[:, :, 0], zebra_chitta_dft[:, :, 1] = cv2.polarToCart(zebra_magnitude, chitta_phase)
+chitta_zebra_dft = np.zeros_like(chitta_dft)
+chitta_zebra_dft[:, :, 0], chitta_zebra_dft[:, :, 1] = cv2.polarToCart(chitta_magnitude, zebra_phase)
+
+# Perform the inverse DFT to obtain the swapped images
+zebra_chitta_swapped = cv2.idft(zebra_chitta_dft, flags=cv2.DFT_SCALE | cv2.DFT_REAL_OUTPUT)
+chitta_zebra_swapped = cv2.idft(chitta_zebra_dft, flags=cv2.DFT_SCALE | cv2.DFT_REAL_OUTPUT)
+    
+################################################################
+```
+
+In figure phase and magnitude is extracted from both the images, after swapping the phases and magnitudes. they are reconstructed by performing \textit{Inverse fourier transform}. We get two new image plots: one with the magnitude of the Zebra image and the phase of the Chitta image, and the other with the magnitude of the Chitta image and the phase of the Zebra image. We can see even after swapping with magnitude and phase, Phase features are dominant after reconstruction.
+
+## Hybrid images
+
+Hybrid image is a technique which creates static images with two interpolation, that change is function of viewing distance from the image. This rely on the concept of frequency components in images to create an intriguing perceptual effect. These images appear different when viewed from various distances due to the way our visual system processes different frequencies. The basic idea behind hybrid images is to combine two images, one with high-frequency components and another with low-frequency components.
+
+```python
+########## Section 4.4 HYBRID IMAGES ##############################
+
+# Apply Gaussian blur to the far image (low-pass filter)
+far_img_blurred = cv2.GaussianBlur(far_img, (15, 15), 15)
+# Apply unsharp mask to the close image (high-pass filter)
+close_img_sharpened = cv2.addWeighted(close_img, 2.0, cv2.GaussianBlur(close_img, (0, 0), 25), -1.0, 0)
+
+# Combine the two images to create the hybrid image
+hybrid_img = cv2.addWeighted(far_img_blurred, 0.78, close_img_sharpened, 0.22, 0)    
+################################################################
+```
+
+<p align="center">
+  <img src="images/hybrid_animal.png" width="450" alt="Phae swaping">
+  <img src="images/hybrid_animal.png" width="50" alt="Phae swaping">
+  <br>
+  High frequncy components make chitta when looked closely, low frequncy is contrubting to show zebra when lookd from far,
+</p>
+
+Low-Frequency Image: The low-frequency image contains larger, more gradual changes in intensity or color. These components include features like the overall shape, contours, and general structure of an object or scene.
+
+High-Frequency Image: The high-frequency image contains smaller, rapid changes in intensity or color, such as fine details, texture, and sharp edges. This image often appears noisy or granular.
+
+Hybrid images are created through the combination of two images at two distinct spatial frequencies. The low-spatial frequency component is derived by convolving one image with a low-pass filter, while the high-spatial frequency component is obtained by convolving another image with a high-pass filter.
+
+In this figure Chitta feature is more dominant when looked closely, Zebra features become more prominent when you look it from far.
+
