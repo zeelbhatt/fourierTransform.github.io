@@ -151,3 +151,9 @@ Hybrid images are created through the combination of two images at two distinct 
 
 In this figure Chitta feature is more dominant when looked closely, Zebra features become more prominent when you look it from far.
 
+## Hybrid images examples in the original paper
+
+
+## References
+Oliva, A., Torralba, A., & Schyns, P. G. (2006). Hybrid images. ACM Transactions on Graphics (TOG), 25(3), 527-532.
+I used chatgpt to refine the language.
