@@ -92,6 +92,14 @@ A band-pass filter allows a specific range of frequencies to pass through while 
   we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.
 </p>
 
+<p align="center">
+  <img src="images/filter_plot.png" width="600" alt="we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.">
+  <br>
+</p>
+
+As another illustration, it becomes evident that a low-pass filter induces image blurring, a high-pass filter assumes responsibility for enhancing sharp edges, and, within the bandpass filter, the resultant output reveals edges accompanied by variations in shadow and light.
+
+
 ## Phase swapping
 
 Phase is often more informative and perceptually significant than the magnitude. The phase of an image is more critical than its magnitude for perception and feature identification is known as the Phase Congruency Theory. 
