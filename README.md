@@ -1,4 +1,7 @@
 # Fourier Transform of Images
+<p align="center">
+  <img src="images/filters_plot.png" width="300" alt="we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.">
+</p>
 
 ## What is fourier transform?
 This can be explained through this images.
