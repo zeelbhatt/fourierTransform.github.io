@@ -9,8 +9,9 @@ The magnitude plot of the Fourier Transform represents the amplitude or strength
 
 <p align="center">
   <img src="images/mag_freq.png" width="600" alt="The magnitude plot represents the strength of frequency component, phase plot represents the relative change in frequency">
+  <br>
+  The magnitude plot represents the strength of frequency component, phase plot represents the relative change in frequency
 </p>
-
 
 ```python
 ########## Section 4.1 MAGNITUDE-PHASE PLOTS ###################
@@ -30,6 +31,8 @@ The phase plot of the Fourier Transform represents the phase information associa
 
 <p align="center">
   <img src="images/Lincon.jpg" width="300" alt="Lincoln in Dalivision (1977)">
+  <br>
+  Lincoln in Dalivision (1977)
 </p>
 
 
@@ -61,7 +64,9 @@ A high-pass filter allows high-frequency components to pass through while attenu
 
 A band-pass filter allows a specific range of frequencies to pass through while attenuating both low and high frequencies. In image processing, band-pass filtering can be useful for isolating features within a particular frequency range. It retains only the mid-frequency details. Bandpass filters are often used in tasks like texture analysis, image segmentation, and feature extraction.
 
-![image3](images/lincon_output.png)
-
-*we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.*
+<p align="center">
+  <img src="images/lincon_output.png" width="600" alt="we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.">
+  <br>
+  we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.
+</p>
 
