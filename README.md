@@ -36,7 +36,7 @@ The magnitude plot of the Fourier Transform represents the amplitude or strength
 </p>
 
 ```python
-########## Section 4.1 MAGNITUDE-PHASE PLOTS ###################
+##############  MAGNITUDE-PHASE PLOTS ###################
 
 import numpy as np
 
@@ -109,7 +109,7 @@ Phase is often more informative and perceptually significant than the magnitude.
 </p>
 
 ```python
-########## Section 4.3 PHASE SWAP ###################
+########################## PHASE SWAP ###################
 
 # Swap the phases while keeping the magnitudes the same
 zebra_chitta_dft = np.zeros_like(zebra_dft)
@@ -131,7 +131,7 @@ In figure phase and magnitude is extracted from both the images, after swapping 
 Hybrid image is a technique which creates static images with two interpolation, that change is function of viewing distance from the image. This rely on the concept of frequency components in images to create an intriguing perceptual effect. These images appear different when viewed from various distances due to the way our visual system processes different frequencies. The basic idea behind hybrid images is to combine two images, one with high-frequency components and another with low-frequency components.
 
 ```python
-########## Section 4.4 HYBRID IMAGES ##############################
+################### HYBRID IMAGES ##############################
 
 # Apply Gaussian blur to the far image (low-pass filter)
 far_img_blurred = cv2.GaussianBlur(far_img, (15, 15), 15)
