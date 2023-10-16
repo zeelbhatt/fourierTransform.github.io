@@ -6,6 +6,9 @@ The idea behind the Fourier transform of an image is to break down the image int
 
 The magnitude plot of the Fourier Transform represents the amplitude or strength of various spatial frequency components in the image. It is also known as the amplitude spectrum. In the context of image analysis, the magnitude plot helps us understand which spatial frequencies are prevalent in the image and to what extent. High values in the magnitude plot indicate the presence of prominent features or patterns at the corresponding spatial frequencies.
 
+![image1](images/)
+
+
 ```python
 ########## Section 4.1 MAGNITUDE-PHASE PLOTS ###################
 
