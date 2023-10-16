@@ -6,9 +6,11 @@ The idea behind the Fourier transform of an image is to break down the image int
 
 The magnitude plot of the Fourier Transform represents the amplitude or strength of various spatial frequency components in the image. It is also known as the amplitude spectrum. In the context of image analysis, the magnitude plot helps us understand which spatial frequencies are prevalent in the image and to what extent. High values in the magnitude plot indicate the presence of prominent features or patterns at the corresponding spatial frequencies.
 
-![image1](images/mag_freq.png)
-*The magnitude plot represents the strength of frequency component, phase plot
-represent the relative change in frequency*
+
+<p align="center">
+  <img src="images/mag_freq.png" width="400" alt="The magnitude plot represents the strength of frequency component, phase plot represents the relative change in frequency">
+</p>
+
 
 ```python
 ########## Section 4.1 MAGNITUDE-PHASE PLOTS ###################
@@ -26,9 +28,10 @@ The phase plot of the Fourier Transform represents the phase information associa
 
 # Low-Pass, High-Pass, and Band-Pass Filters
 
-![Lincoln in Dalivision](images/Lincon.jpg)
+<p align="center">
+  <img src="images/Lincon.jpg" width="300" alt="Lincoln in Dalivision (1977)">
+</p>
 
-*Artwork Information: 'Lincoln in Dalivision' (1977)*
 
 ## Low-Pass, High-Pass & Band-Pass Filters
 
