@@ -8,7 +8,7 @@ The magnitude plot of the Fourier Transform represents the amplitude or strength
 
 
 <p align="center">
-  <img src="images/mag_freq.png" width="400" alt="The magnitude plot represents the strength of frequency component, phase plot represents the relative change in frequency">
+  <img src="images/mag_freq.png" width="600" alt="The magnitude plot represents the strength of frequency component, phase plot represents the relative change in frequency">
 </p>
 
 
