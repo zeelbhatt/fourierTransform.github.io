@@ -182,4 +182,5 @@ In this figure Chitta feature is more dominant when looked closely, Zebra featur
 
 ## References
 Oliva, A., Torralba, A., & Schyns, P. G. (2006). Hybrid images. ACM Transactions on Graphics (TOG), 25(3), 527-532.
+
 I used chatgpt to refine the language.
