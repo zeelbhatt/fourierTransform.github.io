@@ -3,6 +3,23 @@
 ## What is fourier transform?
 This can be explained through this images.
 
+<p align="center">
+  <img src="images/fft1.png" width="700" alt="image">
+</p>
+In the first image (on the left), when you traverse along the X-axis, you won't observe any variation in color throughout the image. However, if you move along the Y-direction, you'll notice changes in color occurring at certain intervals. Consequently, the Fourier transform plot (on the right) of this image exhibits a predominantly vertical pattern.
+
+<p align="center">
+  <img src="images/fft2.png" width="700" alt="image">
+</p>
+Now, in the second image (on the left), when you traverse along the X-axis, you will observe variations in color along the X-axis. If you move along the Y-direction, you will observe even higher frequency color changes. This results in the Fourier transform plot displaying a rectangle shape with a smaller width and greater height, which we find visually appealing.
+
+What type of image corresponds to a square Fourier plot? It's an image with equal frequency changes in both the X and Y directions, as illustrated below.
+
+<p align="center">
+  <img src="images/fft3.png" width="700" alt="image">
+</p>
+
+
 
 
 The idea behind the Fourier transform of an image is to break down the image into its component frequencies. Instead of representing the image as a grid of pixel values, the Fourier transform represents the image as a sum of sinusoidal functions of different frequencies and amplitudes. These sinusoidal functions are characterized by their spatial frequency (how rapidly they oscillate across the image) and their phase (where they start in their cycle).
