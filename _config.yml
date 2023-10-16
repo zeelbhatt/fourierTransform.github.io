@@ -1,6 +1,6 @@
 title: Fourier Transform of images
-description: Image signal processing for machine vision
-logo: images/lincon.png
+description: Image signal processing for machine vision series
+logo: images/Lincon.jpg
 remote_theme: pages-themes/dinky@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
