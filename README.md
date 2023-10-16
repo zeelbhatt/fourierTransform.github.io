@@ -17,3 +17,4 @@ phase = np.angle(dft) # Phase of the FFT
 
 ################################################################
 
+The phase plot of the Fourier Transform represents the phase information associated with each spatial frequency component. The phase is the angle information associated with each frequency component and describes the relative positions and orientations of patterns in the image. It provides information about the position and orientation of edges, patterns, and textures in the image.
