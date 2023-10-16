@@ -93,8 +93,7 @@ A band-pass filter allows a specific range of frequencies to pass through while 
 </p>
 
 <p align="center">
-  <img src="images/filter_plot.png" width="600" alt="we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.">
-  <br>
+  <img src="images/filters_plot.png" width="600" alt="we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency.">
 </p>
 
 As another illustration, it becomes evident that a low-pass filter induces image blurring, a high-pass filter assumes responsibility for enhancing sharp edges, and, within the bandpass filter, the resultant output reveals edges accompanied by variations in shadow and light.
@@ -160,6 +159,21 @@ Hybrid images are created through the combination of two images at two distinct 
 In this figure Chitta feature is more dominant when looked closely, Zebra features become more prominent when you look it from far.
 
 ## Hybrid images examples in the original paper
+
+<p align="center">
+  <img src="images/smiling.png" width="450" alt="Phae swaping">
+  <br>
+  Smiling or frowning ?
+</p>
+
+<p align="center">
+  <img src="images/bike-cycle.png" width="450" alt="Phae swaping">
+  <br>
+  A motorcycle or a bicycle ?
+</p>
+
+
+
 
 
 ## References
