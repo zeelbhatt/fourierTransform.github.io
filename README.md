@@ -172,7 +172,11 @@ In this figure Chitta feature is more dominant when looked closely, Zebra featur
   A motorcycle or a bicycle ?
 </p>
 
-
+<p align="center">
+  <img src="images/bike-cycle.png" width="450" alt="Phae swaping">
+  <br>
+  Einstein or Marilyn?
+</p>
 
 
 
