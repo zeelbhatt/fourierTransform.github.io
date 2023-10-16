@@ -1,5 +1,10 @@
 # Fourier Transform of Images
 
+## What is fourier transform?
+This can be explained through this images.
+
+
+
 The idea behind the Fourier transform of an image is to break down the image into its component frequencies. Instead of representing the image as a grid of pixel values, the Fourier transform represents the image as a sum of sinusoidal functions of different frequencies and amplitudes. These sinusoidal functions are characterized by their spatial frequency (how rapidly they oscillate across the image) and their phase (where they start in their cycle).
 
 ## The Magnitude and the Phase Plot
