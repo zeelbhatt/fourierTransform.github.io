@@ -1,6 +1,6 @@
 # Fourier Transform of Images
 <p align="center">
-  <img src="images/Lincon.jpg" width="600" alt="we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency."> 
+  <img src="images/Lincon.jpg" width="400" alt="we can see that lincon features are more dominant after low-pass filtering, while features of lady and window become more prominent after high-pass filtering as those feature corresponds to higher spacial frequency."> 
 </p>
 Why is this image so strange, Lincon or a person looking out of window? Let us understand using fourier transforms...
 
