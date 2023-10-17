@@ -189,4 +189,4 @@ Oliva, A., Torralba, A., & Schyns, P. G. (2006). Hybrid images. ACM Transactions
 
 I used chatgpt to refine the language.
 
-Some material in this blog is referred from the class EEE 515 at ASU 
+Some material in this blog is referred from the class EEE 515 by [Dr Suren Jaysurya](URL) at ASU 
